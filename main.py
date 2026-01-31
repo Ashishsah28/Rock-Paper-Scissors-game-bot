@@ -190,7 +190,7 @@ async def button_click(update: Update, context: ContextTypes.DEFAULT_TYPE):
             del games[game_id]
 
 async def start_bot():
-    TOKEN = "YOUR_BOT_TOKEN_HERE" 
+    TOKEN = "8229009580:AAHxTvrvM4NYIjGFO86cE6YpcGV4Cd8khT8" 
     app = Application.builder().token(TOKEN).build()
     app.add_handler(InlineQueryHandler(inline_query))
     app.add_handler(CallbackQueryHandler(button_click))
